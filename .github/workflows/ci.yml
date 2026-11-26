@@ -51,6 +51,7 @@ jobs:
         run: python -m pytest -q
   image:
     needs: test
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
